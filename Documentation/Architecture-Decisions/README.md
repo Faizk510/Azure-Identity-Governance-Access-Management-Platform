@@ -6,6 +6,8 @@ Each ADR documents a key architectural decision made during the design and imple
 
 The decisions were driven by the project's business requirements, risk model, Microsoft Entra capabilities, and security principles aligned with NIST Cybersecurity Framework (CSF) 2.0 and NIST SP 800-63.
 
+> **Note:** These Architecture Decision Records (ADRs) document the key architectural decisions made during the planning and implementation of the platform. They explain the architectural reasoning behind the solution and are intended to complement the project documentation rather than serve as deployment or configuration guides.
+
 ## ADR Index
 
 - ADR-001 – Governance-First Identity Architecture
