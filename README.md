@@ -6,7 +6,7 @@ Identity and Access Management (IAM) is a foundational component of enterprise s
 
 This project demonstrates the design, implementation, and validation of a production-inspired Microsoft Entra Identity Administration and Governance platform that integrates identity administration, identity governance, privileged access management, lifecycle automation, and operational tooling into a unified IAM solution.
 
-The implementation models the identity and governance requirements of a regulated financial services organization and demonstrates how Microsoft Entra Identity Administration, Identity Governance, Lifecycle Workflows, Privileged Identity Management (PIM), Conditional Access, and Microsoft Graph PowerShell automation can be integrated into a secure, scalable, and operationally manageable identity platform.
+The implementation models the identity and governance requirements of a regulated financial services organization and demonstrates how native Microsoft Entra capabilities, combined with Microsoft Graph PowerShell automation, can be used to build a secure, scalable, and operationally manageable identity platform.
 
 The design is aligned with identity security principles from the NIST Cybersecurity Framework (CSF) 2.0 and NIST SP 800-63, together with Microsoft Entra recommendations and established IAM practices.
 
@@ -247,7 +247,11 @@ The toolkit was validated through controlled execution of every reporting and au
 
 Representative PowerShell execution screenshots demonstrate the successful operation of both reporting and administrative automation modules.
 
+**Reporting execution:** The User Inventory report retrieves Microsoft Entra user, department, manager, licensing, and account information and exports the results to CSV for operational review.
+
 ![Toolkit Reporting Execution](Screenshots/toolkit-reporting-execution.png)
+
+**Automation execution:** The Bulk Onboarding workflow processes standardized CSV input, creates users, applies identity attributes and manager assignments, and exports an execution report for validation.
 
 ![Toolkit Automation Execution](Screenshots/toolkit-automation-execution.png)
 
@@ -276,12 +280,12 @@ This project demonstrates architectural alignment with recognized security and i
 
 This project establishes a production-inspired identity administration and governance platform that can be extended as organizational requirements evolve. Potential production enhancements include:
 
-- Identity federation using SAML and OpenID Connect (OIDC)
-- SCIM-based identity provisioning
-- HR system integration for event-driven lifecycle management
-- Advanced orchestration using Azure Logic Apps
-- Governance dashboards and operational analytics
-- Expanded operational reporting and administrative automation
+- Identity federation using SAML and OpenID Connect (OIDC) *(for example, partner organizations and external identity providers)*
+- SCIM-based identity provisioning *(for example, SaaS applications and enterprise platforms)*
+- HR system integration for event-driven lifecycle management *(for example, Workday or SAP SuccessFactors)*
+- Advanced orchestration using Azure Logic Apps *(for example, external system integration and custom workflow processing)*
+- Governance dashboards and operational analytics *(for example, Power BI, Azure Monitor, and Log Analytics)*
+- Expanded operational reporting and administrative automation *(for example, service ticket integration, scheduled reporting, and exception remediation)*
 
 ## Architecture Decisions
 
